@@ -215,6 +215,23 @@ namespace Roblox_Modifier
         {
             Clipboard.SetText(pictureBox1.ImageLocation.ToString());
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Image Files|*.png";
+            ofd.Multiselect = false;
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                DirectoryInfo loadingdir = new DirectoryInfo(GetRobloxPlayerInstallFolder().FullName + "\\content\\textures\\loading");
+                FileInfo file = loadingdir.GetFiles("robloxTilt.png").FirstOrDefault();
+                FileInfo file2 = loadingdir.GetFiles("loadingCircle.png").FirstOrDefault();
+                byte[] image;
+                image = File.ReadAllBytes(ofd.FileName);
+                File.WriteAllBytes(file.FullName, image);
+                File.WriteAllBytes(file2.FullName, image);
+            }
+        }
     }
     public class RobloxPlayer
     {

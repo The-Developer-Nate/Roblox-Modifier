@@ -58,14 +58,14 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(226, 142);
+            this.groupBox1.Size = new System.Drawing.Size(226, 134);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Images";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(7, 111);
+            this.button3.Location = new System.Drawing.Point(7, 105);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(120, 23);
             this.button3.TabIndex = 2;
@@ -75,7 +75,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(7, 49);
+            this.button2.Location = new System.Drawing.Point(7, 78);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(213, 23);
             this.button2.TabIndex = 1;
@@ -195,12 +195,13 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(7, 78);
+            this.button7.Location = new System.Drawing.Point(6, 49);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(213, 23);
+            this.button7.Size = new System.Drawing.Size(180, 23);
             this.button7.TabIndex = 3;
-            this.button7.Text = "Set Loading Image to your bust thumbnail";
+            this.button7.Text = "Set Loading Image to any png file";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // RobloModifier
             // 
